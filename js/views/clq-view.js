@@ -1,2 +1,10 @@
-import HeroSection from'../components/hero-section.js';import ProjectCard from'../components/project-card.js';import{clqProjects,comingSoonProjects}from'../data.js';
-export default{name:'ClqView',components:{HeroSection,ProjectCard},data(){return{clqProjects,comingSoonProjects}},template:`<div><hero-section compact eyebrow="Laman Lestari" title="Centralised Labour Quarters (CLQ)" description="Current CLQ developments and coming-soon locations provided in the Laman Lestari website content."/><section class="section"><div class="container"><div class="section-heading"><p class="eyebrow">CLQ Developments</p><h2 class="section-title">Current Developments</h2></div><div class="project-grid"><project-card v-for="project in clqProjects" :key="project.name" :project="project"/></div></div></section><section class="section section--surface"><div class="container"><div class="section-heading"><p class="eyebrow">Coming Soon</p><h2 class="section-title">Coming Soon</h2></div><div class="coming-grid"><article v-for="name in comingSoonProjects" :key="name" class="coming-card"><span>Coming Soon</span><h3>{{name}}</h3></article></div></div></section></div>`};
+import HeroSection from '../components/hero-section.js';
+import ProjectCard from '../components/project-card.js';
+import { siteConfig, clqProjects, comingSoonProjects } from '../data.js';
+
+export default {
+  name: 'ClqView',
+  components: { HeroSection, ProjectCard },
+  data() { return { siteConfig, clqProjects, comingSoonProjects }; },
+  template: `<div><hero-section compact eyebrow="Laman Lestari" title="Centralised Labour Quarters (CLQ)" description="Current CLQ developments and coming-soon locations provided in the Laman Lestari website content." :image="siteConfig.assets.heroClq"/><section class="section"><div class="container"><div class="section-heading"><p class="eyebrow">CLQ Developments</p><h2 class="section-title">Current Developments</h2></div><div class="project-grid"><project-card v-for="project in clqProjects" :key="project.name" :project="project"/></div></div></section><section class="section section--surface"><div class="container"><div class="section-heading"><p class="eyebrow">Coming Soon</p><h2 class="section-title">Coming Soon</h2></div><div class="coming-grid"><article v-for="name in comingSoonProjects" :key="name" class="coming-card"><span>Coming Soon</span><h3>{{name}}</h3></article></div></div></section></div>`,
+};
