@@ -1,0 +1,20 @@
+:root {
+  --color-navy-950:#081b2f;
+  --color-navy-900:#0d2742;
+  --color-navy-800:#153b60;
+  --color-gold-600:#b88a2a;
+  --color-gold-500:#c9a24b;
+  --color-gold-100:#f5ecd6;
+  --color-white:#fff;
+  --color-surface:#f6f7f9;
+  --color-text:#17202a;
+  --color-muted:#667085;
+  --color-border:#d9dee5;
+  --container:1180px;
+  --radius-sm:.5rem;
+  --radius-md:1rem;
+  --radius-lg:1.5rem;
+  --shadow-card:0 14px 40px rgba(8,27,47,.08);
+  --transition-fast:180ms ease;
+  --font-sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
