@@ -11,18 +11,12 @@
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/pages.css">
   <link rel="stylesheet" href="./css/responsive.css">
-  <script type="importmap">
-    {
-      "imports": {
-        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js",
-        "vue-router": "https://unpkg.com/vue-router@4/dist/vue-router.esm-browser.js"
-      }
-    }
-  </script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <div id="app">
+  <div id="app" v-cloak>
     <noscript>This website requires JavaScript to display the interactive site.</noscript>
     <p class="app-loading" aria-live="polite">Loading Laman Lestari…</p>
   </div>
