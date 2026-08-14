@@ -1,0 +1,1 @@
+export default{name:'ValueCard',props:{value:{type:Object,required:true},index:Number},template:`<article class="value-card"><div class="value-index">{{String((index??0)+1).padStart(2,'0')}}</div><h3>{{value.name}}</h3><p>{{value.description}}</p></article>`};

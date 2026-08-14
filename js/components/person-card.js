@@ -1,0 +1,2 @@
+import{getInitials}from'../utils/content.js';
+export default{name:'PersonCard',props:{person:{type:Object,required:true}},methods:{initials:getInitials},template:`<article class="person-card"><div class="person-media"><img v-if="person.image" :src="person.image" :alt="person.name"><div v-else class="person-placeholder" aria-hidden="true">{{initials(person.name)}}</div></div><div class="person-body"><h3>{{person.name}}</h3><p>{{person.role}}</p></div></article>`};
